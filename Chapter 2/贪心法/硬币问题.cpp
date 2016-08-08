@@ -29,5 +29,6 @@ int main()
 		cin>>C[i];
 	cin>>A;
 	solve();
+	//system("pause");
 	return 0;
 }
