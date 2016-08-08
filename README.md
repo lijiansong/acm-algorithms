@@ -10,6 +10,8 @@ ACM Algorithms
     * [poj2386 lake counting](#poj2386-lake-counting)
   * [宽度优先搜索](#宽度优先搜索)
     * [迷宫最短路径问题](#迷宫最短路径问题)
+  * [贪心法](#贪心法)
+    * [硬币问题](#硬币问题)
 
 ## Summary
 
