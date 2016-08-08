@@ -9,7 +9,7 @@ ACM Algorithms
     * [部分和问题](#部分和问题)
     * [poj2386 lake counting](#poj2386-lake-counting)
   * [宽度优先搜索](#宽度优先搜索)
-    *[迷宫最短路径问题](#迷宫最短路径问题)
+    * [迷宫最短路径问题](#迷宫最短路径问题)
 
 ## Summary
 
