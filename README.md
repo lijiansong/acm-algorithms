@@ -1,6 +1,6 @@
 ACM Algorithms
 ============================
-> This archive is about the acm algorithm, which exists frequently in ACM Competitions. It also can be treated as summary of these algorithms. Some examples refer to the book 《Challenge Competition of Programing Design》.
+> This archive is about the acm algorithm, which exists frequently in ACM Competitions. It also can be treated as summary of these algorithms. Some examples refer to the book 《Challenge Competition of Programing》.
 
 ## Content
 
