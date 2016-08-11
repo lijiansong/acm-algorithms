@@ -14,6 +14,7 @@ ACM Algorithms
     * [硬币问题](#硬币问题)
     * [区间调度问题](#区间调度问题)
     * [poj3617 字典序最小问题](#poj3617-字典序最小问题)
+    * [poj3069 Saruman's Army](#)
 
 ## Summary
 
@@ -373,6 +374,9 @@ int main()
 	return 0;
 } 
 ```
+##### poj3069 Saruman's Army
+
+
 
 ## License
 > [The MIT License (MIT)](http://opensource.org/licenses/MIT)
