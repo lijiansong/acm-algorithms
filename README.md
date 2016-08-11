@@ -15,6 +15,7 @@ ACM Algorithms
     * [区间调度问题](#区间调度问题)
     * [poj3617 字典序最小问题](#poj3617-字典序最小问题)
     * [poj3069 Saruman's Army](#poj3069-sarumans-army)
+    * [poj3253 Fence Repair](#poj3253-fence-repair)
 
 ## Summary
 
@@ -420,6 +421,8 @@ int main()
 } 
 
 ```
+
+##### poj3253 Fence Repair
 
 
 ## License
