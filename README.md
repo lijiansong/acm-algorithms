@@ -16,6 +16,8 @@ ACM Algorithms
     * [poj3617 字典序最小问题](#poj3617-字典序最小问题)
     * [poj3069 Saruman's Army](#poj3069-sarumans-army)
     * [poj3253 Fence Repair](#poj3253-fence-repair)
+  * [记忆化搜索与动态规划](#记忆化搜索与动态规划)
+    * [01背包问题](#01背包问题)
 
 ## Summary
 
@@ -479,6 +481,10 @@ int main()
 	return 0;
 }
 ```
+#### 记忆化搜索与动态规划
+> **动态规划（DP：Dynamic Programming）**
+##### 01背包问题
+
 
 ## License
 > [The MIT License (MIT)](http://opensource.org/licenses/MIT)
