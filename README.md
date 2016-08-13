@@ -20,6 +20,7 @@ ACM Algorithms
     * [01背包问题](#01背包问题)
       * [朴素解法](#朴素解法)
       * [DP解法](#dp解法)
+    * [最长公共子序列问题](#最长公共子序列问题)
 
 ## Summary
 
@@ -631,6 +632,7 @@ int main()
 }
 
 ```
+##### 最长公共子序列问题
 
 ## License
 > [The MIT License (MIT)](http://opensource.org/licenses/MIT)
