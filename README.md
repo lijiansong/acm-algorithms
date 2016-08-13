@@ -18,6 +18,8 @@ ACM Algorithms
     * [poj3253 Fence Repair](#poj3253-fence-repair)
   * [记忆化搜索与动态规划](#记忆化搜索与动态规划)
     * [01背包问题](#01背包问题)
+      * [朴素解法](#朴素解法)
+      * [DP解法](#dp解法)
 
 ## Summary
 
@@ -485,6 +487,9 @@ int main()
 > **动态规划（DP：Dynamic Programming）**
 
 ##### 01背包问题
+###### 朴素解法
+
+###### DP解法
 
 
 ## License
