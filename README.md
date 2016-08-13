@@ -586,7 +586,51 @@ int main()
 }
 
 ```
+> dp[i][j]表示从第i个物品开始挑选总重量小于j时，总价值的最大值。有如下的地推公式<br>
+> dp[n][j]=0<br>
+> dp[i][j]=dp[i+1][j],if j<w[i],其他情况，dp[i][j]=max(dp[i+1][j-w[i]]+v[i],dp[i+1][j])<br>
+> 不用写递归函数，直接利用递推式将各项的值计算出来，利用二重循环也可以解决这一问题。
 
+```
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+using namespace std;
+const int MAX_N=101;
+const int MAX_W=10001;
+int dp[MAX_N][MAX_W];
+int weight[MAX_N]={0},value[MAX_N]={0},n,max_w;
+void solve()
+{
+	memset(dp,0,sizeof(dp));
+	for(int i=n-1;i>=0;--i)
+	{
+		for(int j=0;j<=max_w;++j)
+		{
+			if(j<weight[i])
+				dp[i][j]=dp[i+1][j];
+			else
+				dp[i][j]=max(dp[i+1][j],dp[i+1][j-weight[i]]+value[i]);
+		}
+	}
+	cout<<dp[0][max_w]<<endl;
+}
+int main()
+{
+	freopen("in.txt","r",stdin);
+	while (cin>>n&&n)
+	{
+		for(int i=0;i<n;++i)
+			cin>>weight[i]>>value[i];
+		cin>>max_w;
+		solve();
+	}
+	fclose(stdin);
+	return 0;
+}
+
+```
 
 ## License
 > [The MIT License (MIT)](http://opensource.org/licenses/MIT)
