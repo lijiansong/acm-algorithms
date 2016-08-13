@@ -487,13 +487,54 @@ int main()
 > **动态规划（DP：Dynamic Programming）**
 
 ##### 01背包问题
->> n个重量和价值分别为wi和vi。从这些
+> n个重量和价值分别为wi和vi。从这些物体中挑选总重量不超过w的物体，求所有挑选方案中价值总和的最大值。
+
 ###### 朴素解法
 > 针对每个物体是否放入背包，进行搜索
 
 ```
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+const int MAX_N=101;
+int weight[MAX_N]={0},value[MAX_N]={0},n,max_w;
+//从第i个物品开始挑选总重小于w的部分 
+int rec(int i,int w)
+{
+	int ans;
+	//没有剩余的物品了 
+	if(i==n)
+		ans=0;
+	//无法挑选这个物品 
+	else if(w<weight[i]) 
+		ans=rec(i+1,w);
+	//挑选和不挑选都尝试一下 
+	else
+		ans=max(rec(i+1,w-weight[i])+value[i],rec(i+1,w));
+	return ans;
+}
+void solve()
+{
+	cout<<rec(0,max_w)<<endl;
+}
+int main()
+{
+	freopen("in.txt","r",stdin);
+	while (cin>>n&&n)
+	{
+		for(int i=0;i<n;++i)
+			cin>>weight[i]>>value[i];
+		cin>>max_w;
+		solve();
+	}
+	fclose(stdin);
+	return 0;
+}
 
 ```
+> 该方法的搜索深度是n，而且每一层搜索都要进行两次分支，最坏需要O(2^n)的时间。针对每个物体是否放入背包向下搜索尝试。
+
 ###### DP解法
 
 
