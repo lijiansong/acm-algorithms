@@ -137,7 +137,7 @@ int main()
 	return 0;
 }
 ```
-
+[↑ top](#acm-algorithms)
 #### 宽度优先搜索
 > 深度优先搜索隐式地用栈进行计算，而宽度优先搜索则利用了队列.<br>
 > 搜索时首先将初始状态添加到队列里，此后从队列的最前端不断取出状态，把从该状态可以转移到的状态中尚未访问过的部分加入队列，如此往复，直到队列被取空或者找到了问题的解.<br>
@@ -236,6 +236,7 @@ int main()
 }
 
 ```
+[↑ top](#acm-algorithms)
 #### 贪心法
 > 贪心法就是遵循某种规则，不断贪心地选取当前最优策略的算法设计方法.
 
@@ -275,6 +276,7 @@ int main()
 	return 0;
 }
 ```
+[↑ top](#acm-algorithms)
 ##### 区间调度问题
 > 贪心算法，在可选的任务中，每次都选取结束时间最早的任务.
 
@@ -329,6 +331,7 @@ int main()
 	return 0;
 } 
 ```
+[↑ top](#acm-algorithms)
 ##### poj3617 字典序最小问题
 > 不断取S的开头和末尾中较小的一个字符放到T的末尾，对于S的末尾和开头字符相同的情形，为了尽早地使用下一个字符，需要比较下一个字符的大小，而下一个字符也有可能相同，所以有如下算法：
 > - 按照字典序比较S和将S反转后的字符串S’；
@@ -380,6 +383,7 @@ int main()
 	return 0;
 } 
 ```
+[↑ top](#acm-algorithms)
 ##### poj3069 Saruman's Army
 
 ```
@@ -426,7 +430,7 @@ int main()
 } 
 
 ```
-
+[↑ top](#acm-algorithms)
 ##### poj3253 Fence Repair
 > 切割方法看成是二叉树，叶子节点的深度就对应了为了得到对应模板所需的切割次数，开销的合计就是各个叶子节点的<br>
 > **木板的长度 x 节点的深度**<br>
@@ -484,6 +488,7 @@ int main()
 	return 0;
 }
 ```
+[↑ top](#acm-algorithms)
 #### 记忆化搜索与动态规划
 > **动态规划（DP：Dynamic Programming）**
 
@@ -535,7 +540,7 @@ int main()
 
 ```
 > 该方法的搜索深度是n，而且每一层搜索都要进行两次分支，最坏需要O(2^n)的时间。针对每个物体是否放入背包向下搜索尝试。
-
+[↑ top](#acm-algorithms)
 ###### DP解法
 > 对于递归函数rec(i,j)，只要参数相同，返回的结果就相同，所以把第一次计算时的结果记录下来，省掉第二次以后的重复计算。参数的组合不过有n * w种，所以时间复杂度为O(n * w)。这种方法称为 **记忆化搜索**。
 
@@ -587,6 +592,7 @@ int main()
 }
 
 ```
+
 > dp[i][j]表示从第i个物品开始挑选总重量小于j时，总价值的最大值。有如下的地推公式<br>
 > dp[n][j]=0<br>
 > dp[i][j]=dp[i+1][j],if j<w[i],其他情况，dp[i][j]=max(dp[i+1][j-w[i]]+v[i],dp[i+1][j])<br>
@@ -632,8 +638,11 @@ int main()
 }
 
 ```
+[↑ top](#acm-algorithms)
+
 ##### 最长公共子序列问题
 
+[↑ top](#acm-algorithms)
 
 ## License
 > [The MIT License (MIT)](http://opensource.org/licenses/MIT)
@@ -661,3 +670,4 @@ int main()
 ##Postscript
 
 > This archive will be updated regularly.
+[↑ top](#acm-algorithms)
