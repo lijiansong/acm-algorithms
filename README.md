@@ -540,6 +540,7 @@ int main()
 
 ```
 > 该方法的搜索深度是n，而且每一层搜索都要进行两次分支，最坏需要O(2^n)的时间。针对每个物体是否放入背包向下搜索尝试。
+
 [↑ top](#acm-algorithms)
 ###### DP解法
 > 对于递归函数rec(i,j)，只要参数相同，返回的结果就相同，所以把第一次计算时的结果记录下来，省掉第二次以后的重复计算。参数的组合不过有n * w种，所以时间复杂度为O(n * w)。这种方法称为 **记忆化搜索**。
@@ -670,4 +671,5 @@ int main()
 ##Postscript
 
 > This archive will be updated regularly.
+
 [↑ top](#acm-algorithms)
