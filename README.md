@@ -78,7 +78,7 @@ int main()
 	return 0;
 }
 ```
-
+[↑ top](#acm-algorithms)
 ##### poj2386 lake counting
 > 从任意的W地方开始，不停地把邻接的部分替换成'.'，1次dfs后与初始的这个W连接的所有的W就都被替换成了'.'，直到图中不在存在W为止，总共进行dfs的次数就是答案，时间复杂度为O(8*N*M)=O(N*M) 
 
