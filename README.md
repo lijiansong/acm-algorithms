@@ -642,7 +642,7 @@ int main()
 [↑ top](#acm-algorithms)
 
 ##### 最长公共子序列问题
-> Description: 给定两个字符串，求出这两个字符串最长的公共子序列的长度。e.g. m=4,n=4,s="abcd",t="bfcd",返回3 ("bcd").
+> Description: 给定两个字符串，求出这两个字符串最长的公共子序列的长度。e.g. m=4,n=4,s="abcd",t="bfcd",返回3. ("bcd").
 
 [↑ top](#acm-algorithms)
 
