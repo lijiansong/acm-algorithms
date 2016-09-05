@@ -644,6 +644,49 @@ int main()
 ##### 最长公共子序列问题
 > Description: 给定两个字符串，求出这两个字符串最长的公共子序列的长度。e.g. m=4,n=4,s="abcd",t="bfcd",返回3. ("bcd"). 定义dp[i][j]表示s1s2...si和t1t2...tj的最长公共子序列的长度，则 很容易得出，s1s2...si+1和t1t2...tj+1的公共子序列可能是<br>当si+1=ti+1时，在dp[i][j]的末尾追加si+1;<br>s1s2...si和t1t2...tj+1的公共子列;<br>s1s2...si+1和t1t2...tj的公共子列.
 
+```
+#include<iostream>
+#include<algorithm>
+#include<cstdio>
+using namespace std;
+const int MAX_N=1000;
+const int MAX_M=1000;
+char s[MAX_N],t[MAX_M];
+int n,m,dp[MAX_N][MAX_M];
+void solve()
+{
+	dp[0][0]=0;
+	for(int i=0;i<n;++i)
+	{
+		for(int j=0;j<m;++j)
+		{
+			if(s[i+1]=t[i+1])
+			{
+				dp[i+1][j+1]=dp[i][j]+1;
+			}
+			else
+			{
+				dp[i+1][j+1]=max(dp[i][j+1],dp[i+1][j]);
+			}
+		}
+	}
+	cout<<dp[n][m]<<endl;
+}
+int main()
+{
+	freopen("in.txt","r",stdin);
+	while(cin>>n>>m)
+	{
+		for(int i=0;i<n;++i)
+			cin>>s[i];
+		for(int j=0;j<m;++j)
+			cin>>t[j];
+		solve();
+	}
+	return 0;
+} 
+```
+
 [↑ top](#acm-algorithms)
 
 ## License
