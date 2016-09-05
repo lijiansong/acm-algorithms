@@ -642,7 +642,7 @@ int main()
 [↑ top](#acm-algorithms)
 
 ##### 最长公共子序列问题
-> Description: 给定两个字符串，求出这两个字符串最长的公共子序列的长度。e.g. m=4,n=4,s="abcd",t="bfcd",返回3. ("bcd").
+> Description: 给定两个字符串，求出这两个字符串最长的公共子序列的长度。e.g. m=4,n=4,s="abcd",t="bfcd",返回3. ("bcd"). 定义dp[i][j]表示s1s2...si和t1t2...tj的最长公共子序列的长度，则 很容易得出，s1s2...si+1和t1t2...tj+1的公共子序列可能是<br>当si+1=ti+1时，在dp[i][j]的末尾追加si+1;<br>s1s2...si和t1t2...tj+1的公共子列;<br>s1s2...si+1和t1t2...tj的公共子列.
 
 [↑ top](#acm-algorithms)
 
