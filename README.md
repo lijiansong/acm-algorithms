@@ -23,6 +23,7 @@ ACM Algorithms
     * [最长公共子序列问题](#最长公共子序列问题)
   * [数据结构](#数据结构)
     * [优先队列](#优先队列)
+      * [poj2431 Expedition](#poj2431-expedition)
     * [二叉搜索树](#二叉搜索树)
     * [并查集](#并查集)
     * [线段树](#线段树)
@@ -700,8 +701,63 @@ int main()
 [↑ top](#acm-algorithms)
 
 #### 数据结构
+> 常用的数据结构：堆、二叉搜索书、并查集、线段树等
 
 ##### 优先队列
+> 优先队列能完成下列操作：插入一个数值；取出最小(最大)的数值，利用“小根堆”能够高效地解决最小数值的问题；C++中，STL的proority_queue取出数值得到的是最大值。
+
+###### poj2431 Expedition
+> 当经过加油站i时，向优先队列中插入B[i];<br>当燃料箱为空时，
+- 如果优先队列也是空的，则无法到达终点；
+- 否则取出优先队列中的最大元素，并给卡车加油。
+
+```
+#include<iostream>
+#include<queue>
+using namespace std;
+const int MAX_N=10000;
+int L,P,N;//L:distance; P:initial oil; N: nums of oil station
+int A[MAX_N+1],B[MAX_N+1];//A: distance of oil station; B: max oil of every station
+void solve()
+{
+	A[N]=L,B[N]=0,N++;
+	int ans=0,pos=0,d=0,tank=P;
+	priority_queue<int> que;
+	
+	for(int i=0;i<N;++i)
+	{
+		d=A[i]-pos;
+		while(tank-d<0)
+		{
+			if(que.empty())
+			{
+				puts("-1");
+				return;
+			}
+			tank+=que.top();
+			que.pop();
+			ans++;
+		}
+		tank-=d;
+		pos=A[i];
+		que.push(B[i]);
+	}
+	cout<<ans<<endl;
+}
+int main()
+{
+	freopen("in.txt","r",stdin);
+	while(cin>>N>>L>>P)
+	{
+		for(int i=0;i<N;++i)
+			cin>>A[i];
+		for(int i=0;i<N;++i)
+			cin>>B[i];
+		 solve();
+	}
+	return 0;
+}
+```
 
 ##### 二叉搜索树
 
