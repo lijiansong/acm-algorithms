@@ -758,6 +758,7 @@ int main()
 	return 0;
 }
 ```
+[↑ top](#acm-algorithms)
 
 ##### 二叉搜索树
 
