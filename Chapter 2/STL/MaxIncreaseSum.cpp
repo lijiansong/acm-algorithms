@@ -2,6 +2,17 @@
 #include <cstdio>
 #pragma warning(disable:4996)
 using namespace std;
+/*long int Pow(long int x,unsigned int n)
+{
+	if(n==0)
+		return 1;
+	if(n==1)
+		return x;
+	else if((x%2)==0)
+		return Pow(x*x,n/2);
+	else
+		return Pow(x*x,n/2)*x;
+} */
 
 int main()
 {
