@@ -942,7 +942,7 @@ const int MAX_N = 1001;
 int AL[MAX_ML], BL[MAX_ML], DL[MAX_ML];
 int AD[MAX_MD], BD[MAX_MD], DD[MAX_MD];
 const int INF = 1000001;
-int d[MAX_N];
+int d[MAX_N];//第i号牛的位置
 int N, ML, MD;
 void solve()
 {
