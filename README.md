@@ -928,6 +928,7 @@ int main()
 	return 0;
 }
 ```
+[↑ top](#acm-algorithms)
 
 ##### poj3169 Layout
 > 查分约束
@@ -995,6 +996,7 @@ int main()
 	return 0;
 }
 ```
+[↑ top](#acm-algorithms)
 
 #### 数学问题
 
