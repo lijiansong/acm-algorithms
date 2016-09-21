@@ -3,7 +3,7 @@
 	Copyright: 
 	Author: 
 	Date: 21/09/16 16:27
-	Description: ³ßËõ·¨ O(n) 
+	Description: ³ßÈ¡·¨ O(n) 
 */
 
 #include<iostream>
