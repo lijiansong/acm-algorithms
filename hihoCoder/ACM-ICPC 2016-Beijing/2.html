@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta property="qc:admins" content="25115412737374526375" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>hihoCoder</title>
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="http://static.hihocoder.com/js/libs/html5.js?1457224552.js"></script>
+	    <![endif]-->
+	    <link href="http://static.hihocoder.com/images/hiho.ico" rel="shortcut icon" type="image/x-icon">
+		<link type="text/css" rel="stylesheet" href="http://static.hihocoder.com/styles/home.css?1473226694.css">
+		<script type="text/javascript" src="http://static.hihocoder.com/js/libs/jquery-1.10.2.min.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/api.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/common.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/dropdown.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/button.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/alert.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/libs/tab.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/collapse.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/tooltip.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/modal.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/tag.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/discuss.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/contest.js?1457224552.js"></script>
+        <script type="text/javascript" src="http://static.hihocoder.com/js/framework/popover.js?1457224552.js"></script>
+		<script type="text/javascript">
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?9334676254a219943ea90c19530c3bec";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<nav id="tl-top-navbar" class="navbar navbar-inverse">
+<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse">
+		<div class="container">
+			<a class="navbar-brand" href="/">hihocoder</a>
+			<ul class="nav navbar-nav">
+								<li>
+					<a href="/hiho">hiho一下</a></li>
+				<li>
+					<a href="/contests" class="fire">比赛<span class="icon-fire"></span></a>
+				</li>
+				<li>
+					<a href="/problemset">题库</a></li>
+				<li>
+					<a href="/discuss">讨论</a></li> 
+							</ul>
+			<ul class="nav navbar-nav navbar-right">
+								<!-- <li><a href="/notifications">消息</a></li>  -->	
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">team160342 <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/user/69625">个人主页</a></li>
+						<li><a href="/settings">账户设置</a></li>
+						<li class="divider"></li>
+						<li><a href="javascript:api.logout();">退出</a></li>
+					</ul>
+				</li>
+							</ul>
+		</div>
+	</div><!-- /.navbar-collapse -->
+	</nav>
+				<header id="tl-site-header" style="background: #000 url(http://static.hihocoder.com/images/bg.jpg) no-repeat center 0;background-size: 100%;">
+	<div class="tl-site-header-wrap">
+		<div class="container clearfix">
+			<div class="tl-site-header-logo">
+				<img class="pic" src="http://static.hihocoder.com/images/hiho.jpg">
+				<span class="logo-bg"></span>
+			</div>
+			<div class="tl-site-header-title">
+				<h3>ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛										<a disabled="disabled" class="btn btn-success">已经报名</a>
+									</h3>
+																				<p class="time">正在进行： <span>3890</span></p>
+							</div>
+			<ul class="tl-site-header-nav">
+				<li><a href="/contest/acmicpc2016beijingonline">首页</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/problems">题目列表</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/submitted">我的提交</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/rank">排名</a></li>
+												<li><a target="_blank" href="/discuss/tag/acmicpc2016beijing">讨论</a></li>
+							</ul>
+			<div class="tl-site-header-meta clearfix">
+				<p class="registered">报名人数：2000</p>
+								<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style sns-share">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+</div>
+<!-- JiaThis Button END -->
+							</div>
+		</div>
+	</div>
+</header>
+<script type="text/javascript">
+	var time = 3890;
+	var str_day = "天";
+	var str_hour = "小时";
+	var str_minute = "分钟";
+	var str_second = "秒";
+	$(function(){
+		$.showTime();
+	});
+</script>
+<script type="text/javascript">
+	//weixin
+	var imgUrl = 'http://static.hihocoder.com/images/hiho.jpg';
+	var lineLink = 'http://hihocoder.com/contest/acmicpc2016beijingonline';
+	var descContent = "";
+	var shareTitle = '我报名参加了ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛，小伙伴们也一起来挑战吧！';
+
+	//jiathis
+	function setShare(title, url) {
+		//jiathis
+        jiathis_config.title = title;
+        jiathis_config.url = url;
+    }
+	var jiathis_config={
+	 	title: "我报名参加了#ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛#，小伙伴们也一起来挑战吧！--分享自@hihoCoder,链接地址:",
+		url: "http://hihocoder.com/contest/acmicpc2016beijingonline",
+		summary: ' ',
+		data_track_clickback: true,
+		hideMore: true
+	}
+</script>
+
+			<div id="content" class="container">
+				<div class="contest-problem" id="main">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">题目2 : Genius ACM</h3>
+		</div>
+		<div class="panel-body">
+			<!-- 
+parameter:
+	@time_limit
+	@case_time_limit
+	@memory_limit
+	@description
+	@sample_input
+	@sample_output		
+-->
+<div id="tl-problem-content">
+	<div class="limit">
+		<div>时间限制:<span style="margin-left: 10px;">3000ms</span></div>
+		<div>单点时限:<span style="margin-left: 10px;">3000ms</span></div>
+		<div>内存限制:<span style="margin-left: 10px;">256MB</span></div>		
+	</div>
+	<table></table>
+	<dl class="des">
+		<div><h3>描述</h3><p><em><strong>Advanced CPU Manufacturer</strong></em> (ACM) is one of the best CPU manufacturer in the world. Every day, they manufacture n CPU chips and sell them all over the world.</p><p>As you may know, each batch of CPU chips must pass a quality test by the QC department before they can be sold. The testing procedure is as follows:</p><p>1) Randomly pick m pairs of CPU chips from the batch of chips (If there are less than 2m CPU chips in the batch of chips, pick as many pairs as possible.)</p><p>2) For each pair, measure the <em><strong>Relative Performance Difference</strong></em> (RPD) between the two CPU chips. Let D<sub>i</sub> be the RPD of the i-th pair</p><p>3) Calculate the <em><strong>Sqared Performance Difference</strong></em> (SPD) of the batch according to the following formula:</p><p style="text-align:left;"><strong>SPD=∑D<sub>i</sub><sup>2</sup> </strong></p><p>If there are only 1 CPU in a batch, then the SPD of that batch is 0.</p><p>4) The batch of chips pass the test if and only if SPD≤k, where k is a preseted constant</p><p>Usually they send all the n CPU chips as a single batch to the QC department every day. As one of the best CPU manufacturer in the world, ACM never fail the test. However, with the continuous improvement of CPU performance, they find that they are at risk!</p><p>Of course they don&#39;t want to take any risks. So they make a decision to divide the n chips into several batches to ensure all of them pass the test. What’s more, each batch should be a continuous subsequence of their productions, otherwise the QC department will notice that they are cheating. Quality tests need time and money, so they want to minimize the number of batches.</p><p>Given the absolute performance of the n chips P<sub>1 ... </sub>P<sub>n</sub> mesured by ACM in order of manufacture, your task is to determine the minimum number of batches to ensure that all chips pass the test. The RPD of two CPU chips equals to the difference of their absolute performance.<br /></p><h3>输入</h3><p>The first line contains a single integer T, indicating the number of test cases.</p><p>In each test case, the first line contains three integers n, m, k. The second line contains n integers, P<sub>1 ... </sub>P<sub>n</sub>.</p><p>T≤12<br />1≤n,m≤5×10<sup>5</sup><br />0≤k≤10<sup>18</sup><br />0≤P<sub>i</sub>≤2<sup>20</sup></p><h3>输出</h3><p>For each test case, print the answer in a single line.</p></div>
+		<dt>样例输入</dt>
+		<dd>
+			<pre>2
+5 1 49
+8 2 1 7 9
+5 1 64
+8 2 1 7 9</pre>
+		</dd>
+		<dt>样例输出</dt>
+		<dd>
+			<pre>2
+1</pre>
+		</dd>
+	</dl>
+</div>		</div>
+	</div>
+	<!--
+	@form_action
+	@form_onsubmit
+	@contest_id
+	@problem_id
+-->
+<article class="tl-code-editor">
+	<form id="h-form-code-editor" class="form-horizontal" action="/api/problem/submit.json" method="post" onsubmit="document.getElementById('source-input').value=window.aceEditor.getSession().getValue();$(this).ajaxsubmit(Callbacks.redirect('url'));return false;">
+		<input class="hide" name="contest-id" value="233" />
+		<input class="hide" name="problem-id" value="1384" />
+		<input id="source-input" name="source" value="" type="hidden" />
+		<header class="tl-code-editor-toolbar clearfix">
+			<div class="btn-group">
+				<a data-keyboard="emacs" class="h-toggle-keyboard btn btn-default emacs">Emacs</a>
+				<a data-keyboard="normal" class="h-toggle-keyboard btn btn-default normal active">Normal</a>
+				<a data-keyboard="vim" class="h-toggle-keyboard btn btn-default vim">Vim</a>
+			</div>
+			<div class="toggle-screen">
+				<a class="h-fullscreen"><span class="icon-fullscreen"></span></a>
+			</div>
+			<select name="language" class="tl-code-editor-lang h-select-lang">
+								<option value="GCC" >GCC</option>
+				<option value="G++" selected>G++</option>
+								<option value="C#" >C#</option>
+								<option value="Java" >Java</option>
+								<option value="Python2" >Python2</option>
+											</select>
+		</header>
+		<div class="tl-code-editor-content">
+			<pre id="code-editor" style="height:500px;position:relative;font-size:16px;line-height:17px"></pre>
+		</div>
+		<footer class="tl-code-editor-footer clearfix">
+						<div class="r">
+								<button type="submit" class="btn btn-success">提交</button>
+			</div>
+		</footer>
+	</form>
+</article>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/ace.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-c_cpp.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-csharp.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-java.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-python.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/theme-chrome.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/keybinding-emacs.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/keybinding-vim.js?1457224552.js"></script>
+
+	</div>
+<!--
+	@form_action
+	@form_onsubmit
+	@contest_id
+	@problem_id
+-->
+<div id="fullscreen-code-editor-wrap" class="tl-fullscreen-wrap hide">
+	<div class="left-bar">
+		<!-- 
+parameter:
+	@time_limit
+	@case_time_limit
+	@memory_limit
+	@description
+	@sample_input
+	@sample_output		
+-->
+<div id="tl-problem-content">
+	<div class="limit">
+		<div>时间限制:<span style="margin-left: 10px;">3000ms</span></div>
+		<div>单点时限:<span style="margin-left: 10px;">3000ms</span></div>
+		<div>内存限制:<span style="margin-left: 10px;">256MB</span></div>		
+	</div>
+	<table></table>
+	<dl class="des">
+		<div><h3>描述</h3><p><em><strong>Advanced CPU Manufacturer</strong></em> (ACM) is one of the best CPU manufacturer in the world. Every day, they manufacture n CPU chips and sell them all over the world.</p><p>As you may know, each batch of CPU chips must pass a quality test by the QC department before they can be sold. The testing procedure is as follows:</p><p>1) Randomly pick m pairs of CPU chips from the batch of chips (If there are less than 2m CPU chips in the batch of chips, pick as many pairs as possible.)</p><p>2) For each pair, measure the <em><strong>Relative Performance Difference</strong></em> (RPD) between the two CPU chips. Let D<sub>i</sub> be the RPD of the i-th pair</p><p>3) Calculate the <em><strong>Sqared Performance Difference</strong></em> (SPD) of the batch according to the following formula:</p><p style="text-align:left;"><strong>SPD=∑D<sub>i</sub><sup>2</sup> </strong></p><p>If there are only 1 CPU in a batch, then the SPD of that batch is 0.</p><p>4) The batch of chips pass the test if and only if SPD≤k, where k is a preseted constant</p><p>Usually they send all the n CPU chips as a single batch to the QC department every day. As one of the best CPU manufacturer in the world, ACM never fail the test. However, with the continuous improvement of CPU performance, they find that they are at risk!</p><p>Of course they don&#39;t want to take any risks. So they make a decision to divide the n chips into several batches to ensure all of them pass the test. What’s more, each batch should be a continuous subsequence of their productions, otherwise the QC department will notice that they are cheating. Quality tests need time and money, so they want to minimize the number of batches.</p><p>Given the absolute performance of the n chips P<sub>1 ... </sub>P<sub>n</sub> mesured by ACM in order of manufacture, your task is to determine the minimum number of batches to ensure that all chips pass the test. The RPD of two CPU chips equals to the difference of their absolute performance.<br /></p><h3>输入</h3><p>The first line contains a single integer T, indicating the number of test cases.</p><p>In each test case, the first line contains three integers n, m, k. The second line contains n integers, P<sub>1 ... </sub>P<sub>n</sub>.</p><p>T≤12<br />1≤n,m≤5×10<sup>5</sup><br />0≤k≤10<sup>18</sup><br />0≤P<sub>i</sub>≤2<sup>20</sup></p><h3>输出</h3><p>For each test case, print the answer in a single line.</p></div>
+		<dt>样例输入</dt>
+		<dd>
+			<pre>2
+5 1 49
+8 2 1 7 9
+5 1 64
+8 2 1 7 9</pre>
+		</dd>
+		<dt>样例输出</dt>
+		<dd>
+			<pre>2
+1</pre>
+		</dd>
+	</dl>
+</div>	</div>
+	<div class="separator"></div>
+	<div class="right-bar">
+		<article class="tl-code-editor">
+			<form id="h-form-full-code-editor" class="form-horizontal" action="/api/problem/submit.json" method="post" onsubmit="document.getElementById('full-source-input').value=window.aceFullEditor.getSession().getValue();$(this).ajaxsubmit(Callbacks.redirect('url'));return false;">
+				<input class="hide" name="contest-id" value="233" />
+				<input class="hide" name="problem-id" value="1384" />
+				<input id="full-source-input" name="source" value="" type="hidden" />
+				<header class="tl-code-editor-toolbar clearfix">
+					<div class="btn-group">
+						<a data-keyboard="emacs" class="h-toggle-keyboard btn btn-default emacs">Emacs</a>
+						<a data-keyboard="normal" class="h-toggle-keyboard btn btn-default normal active">Normal</a>
+						<a data-keyboard="vim" class="h-toggle-keyboard btn btn-default vim">Vim</a>
+					</div>
+					<div class="toggle-screen">
+						<a href="" class="h-resize-screen"><span class="icon-resize-small"></span></a>
+					</div>
+					<select name="language" class="tl-code-editor-lang h-select-lang">
+												<option value="GCC" >GCC</option>
+						<option value="G++" selected>G++</option>
+												<option value="C#" >C#</option>
+												<option value="Java" >Java</option>
+												<option value="Python2" >Python2</option>
+																	</select>
+				</header>
+				<div class="tl-code-editor-content">
+					<pre id="fullscreen-code-editor" style="height:500px;position:relative;font-size:16px;line-height:17px"></pre>
+				</div>
+				<footer class="tl-code-editor-footer clearfix">
+										<div class="r">
+												<button type="submit" class="btn btn-success">提交</button>
+					</div>
+				</footer>
+			</form>
+		</article>
+ 			</div>
+</div>
+	
+<script type="text/javascript" src="http://static.hihocoder.com/js/code-editor.js?1457224552.js"></script><script type="text/javascript">
+	var mode = {
+			'GCC'  :'ace/mode/c_cpp',
+			'G++'  :'ace/mode/c_cpp',
+			'C#'   :'ace/mode/csharp',
+			'Java' :'ace/mode/java',
+			'Python2' :'ace/mode/python',
+			'Python3' :'ace/mode/python'
+	};	
+	var editor = window.aceEditor;
+	var fullEditor = window.aceFullEditor;
+	editor.setTheme('ace/theme/tomorrow_night_eighties');
+		editor.getSession().setMode(mode['G++']);
+	fullEditor.getSession().setMode(mode['G++']);
+		    editor.getSession().setValue("");
+    fullEditor.getSession().setValue("");
+    </script>
+<script type="text/javascript">
+	var sec = 'dontwakemeup';
+	var editor = window.aceEditor;
+	var fullEditor = window.aceFullEditor;
+	editor.on("change", function(e) {
+		if(editor.isFocused()) {
+			//console.log("editor: " + e.data);
+			var deltas = new Array();
+			deltas[0] = e.data;
+			fullEditor.getSession().getDocument().applyDeltas(deltas);
+					}
+	});
+	editor.getSession().on("changeScrollTop", function(e) {
+		if(editor.isFocused()) {
+			fullEditor.getSession().setScrollTop(parseInt(e));
+			//console.log("editor scroll: " + parseInt(e));
+					}
+	});
+	editor.getSession().on("changeScrollLeft", function(e) {
+		if(editor.isFocused()) {
+			fullEditor.getSession().setScrollLeft(parseInt(e));
+			//console.log("editor scroll: " + parseInt(e));
+					}
+	});
+	fullEditor.on("change", function(e) {
+		if(fullEditor.isFocused()) {
+			var deltas = new Array();
+			deltas[0] = e.data;
+			editor.getSession().getDocument().applyDeltas(deltas);
+					}
+	});
+	fullEditor.getSession().on("changeScrollTop", function(e) {
+		if(fullEditor.isFocused()) {
+			editor.getSession().setScrollTop(parseInt(e));
+					}
+	});
+	fullEditor.getSession().on("changeScrollLeft", function(e) {
+		if(fullEditor.isFocused()) {
+			editor.getSession().setScrollLeft(parseInt(e));
+					}
+	});
+</script>
+<script type="text/javascript" src="http://static.hihocoder.com/js/libs/weixin-share.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2232" charset="utf-8"></script>			</div>
+		</div>
+        <a id="gotop" href="#">
+            <span>▲</span>
+        </a>
+		<footer id="tl-footer">
+	<div class="container tl-footer-lg">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-3">
+						<h4>关于我们</h4>
+						<ul>
+							<li><a href="/about-us#website-desc">网站介绍</a></li>
+							<li><a href="/about-us#team-desc">团队介绍</a></li>
+							<li><a href="/about-us#connect-us">联系方式</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>hihoCoder</h4>
+						<ul>
+							<li><a href="/hiho">hiho一下</a></li>
+							<li><a href="/contests">比赛</a></li>
+							<li><a href="/discuss">讨论</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>帮助中心</h4>
+						<ul>
+							<li><a href="/help-center/coder-help">答题帮助</a></li>
+							<li><a href="/help-center/contest-rating">比赛积分系统</a></li>
+													</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>关注我们</h4>
+						<ul>
+							<li><a href="http://weibo.com/u/3473063194" target="_blank" title="hihoCoder新浪微博" class="connect-icon sina-weibo">新浪微博</a></li>
+                        <li><a data-container="body" id="weixin" data-toggle="popover" data-placement="top" data-html="true" data-content="<img style='width:150px;' src='http://static.hihocoder.com/images/weixin.jpg'>" data-trigger="hover" style="  cursor: pointer;">微信公众号</a></li>
+                        <li><a href="http://page.renren.com/601893290" target="_blank" title="hihoCoder人人公共主页">人人公共主页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 side">
+				<h4>联系我们</h4>
+				<address>
+					<p>北京市海淀区中关村购物广场西侧 善缘街1号 立方庭大厦1-307</p>
+					<a href="mailto:webmaster@hihocoder.com">webmaster@hihocoder.com</a>
+				</address>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tl-footer-sm">
+		<p>© 2016 hihoCoder 沪ICP备14022864号</p>
+			</div>
+</footer>
+<script type="text/javascript">
+    $(function () {
+        $("#weixin").popover()
+    })
+</script>	</body>
+</html>

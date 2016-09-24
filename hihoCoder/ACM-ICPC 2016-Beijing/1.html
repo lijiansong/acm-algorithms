@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta property="qc:admins" content="25115412737374526375" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>hihoCoder</title>
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="http://static.hihocoder.com/js/libs/html5.js?1457224552.js"></script>
+	    <![endif]-->
+	    <link href="http://static.hihocoder.com/images/hiho.ico" rel="shortcut icon" type="image/x-icon">
+		<link type="text/css" rel="stylesheet" href="http://static.hihocoder.com/styles/home.css?1473226694.css">
+		<script type="text/javascript" src="http://static.hihocoder.com/js/libs/jquery-1.10.2.min.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/api.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/common.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/dropdown.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/button.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/alert.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/libs/tab.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/collapse.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/tooltip.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/modal.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/tag.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/discuss.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/contest.js?1457224552.js"></script>
+        <script type="text/javascript" src="http://static.hihocoder.com/js/framework/popover.js?1457224552.js"></script>
+		<script type="text/javascript">
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?9334676254a219943ea90c19530c3bec";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<nav id="tl-top-navbar" class="navbar navbar-inverse">
+<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse">
+		<div class="container">
+			<a class="navbar-brand" href="/">hihocoder</a>
+			<ul class="nav navbar-nav">
+								<li>
+					<a href="/hiho">hiho一下</a></li>
+				<li>
+					<a href="/contests" class="fire">比赛<span class="icon-fire"></span></a>
+				</li>
+				<li>
+					<a href="/problemset">题库</a></li>
+				<li>
+					<a href="/discuss">讨论</a></li> 
+							</ul>
+			<ul class="nav navbar-nav navbar-right">
+								<!-- <li><a href="/notifications">消息</a></li>  -->	
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">team160342 <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/user/69625">个人主页</a></li>
+						<li><a href="/settings">账户设置</a></li>
+						<li class="divider"></li>
+						<li><a href="javascript:api.logout();">退出</a></li>
+					</ul>
+				</li>
+							</ul>
+		</div>
+	</div><!-- /.navbar-collapse -->
+	</nav>
+				<header id="tl-site-header" style="background: #000 url(http://static.hihocoder.com/images/bg.jpg) no-repeat center 0;background-size: 100%;">
+	<div class="tl-site-header-wrap">
+		<div class="container clearfix">
+			<div class="tl-site-header-logo">
+				<img class="pic" src="http://static.hihocoder.com/images/hiho.jpg">
+				<span class="logo-bg"></span>
+			</div>
+			<div class="tl-site-header-title">
+				<h3>ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛										<a disabled="disabled" class="btn btn-success">已经报名</a>
+									</h3>
+																				<p class="time">正在进行： <span>3936</span></p>
+							</div>
+			<ul class="tl-site-header-nav">
+				<li><a href="/contest/acmicpc2016beijingonline">首页</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/problems">题目列表</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/submitted">我的提交</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/rank">排名</a></li>
+												<li><a target="_blank" href="/discuss/tag/acmicpc2016beijing">讨论</a></li>
+							</ul>
+			<div class="tl-site-header-meta clearfix">
+				<p class="registered">报名人数：2000</p>
+								<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style sns-share">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+</div>
+<!-- JiaThis Button END -->
+							</div>
+		</div>
+	</div>
+</header>
+<script type="text/javascript">
+	var time = 3936;
+	var str_day = "天";
+	var str_hour = "小时";
+	var str_minute = "分钟";
+	var str_second = "秒";
+	$(function(){
+		$.showTime();
+	});
+</script>
+<script type="text/javascript">
+	//weixin
+	var imgUrl = 'http://static.hihocoder.com/images/hiho.jpg';
+	var lineLink = 'http://hihocoder.com/contest/acmicpc2016beijingonline';
+	var descContent = "";
+	var shareTitle = '我报名参加了ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛，小伙伴们也一起来挑战吧！';
+
+	//jiathis
+	function setShare(title, url) {
+		//jiathis
+        jiathis_config.title = title;
+        jiathis_config.url = url;
+    }
+	var jiathis_config={
+	 	title: "我报名参加了#ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛#，小伙伴们也一起来挑战吧！--分享自@hihoCoder,链接地址:",
+		url: "http://hihocoder.com/contest/acmicpc2016beijingonline",
+		summary: ' ',
+		data_track_clickback: true,
+		hideMore: true
+	}
+</script>
+
+			<div id="content" class="container">
+				<div class="contest-problem" id="main">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">题目1 : The Book List</h3>
+		</div>
+		<div class="panel-body">
+			<!-- 
+parameter:
+	@time_limit
+	@case_time_limit
+	@memory_limit
+	@description
+	@sample_input
+	@sample_output		
+-->
+<div id="tl-problem-content">
+	<div class="limit">
+		<div>时间限制:<span style="margin-left: 10px;">1000ms</span></div>
+		<div>单点时限:<span style="margin-left: 10px;">1000ms</span></div>
+		<div>内存限制:<span style="margin-left: 10px;">256MB</span></div>		
+	</div>
+	<table></table>
+	<dl class="des">
+		<div><h3>描述</h3><p>The history of Peking University Library is as long as the history of Peking University. It was build in 1898. At the end of year 2015, it had about 11,000 thousand volumes of books, among which 8,000 thousand volumes were paper books and the others were digital ones. Chairman Mao Zedong worked in Peking University Library for a few months as an assistant during 1918 to 1919. He earned 8 Dayang per month there, while the salary of top professors in Peking University is about 280 Dayang per month.</p><p>Now Han Meimei just takes the position which Chairman Mao used to be in Peking University Library. Her first job is to rearrange a list of books. Every entry in the list is in the format shown below:</p><p><strong>CATEGORY 1/CATEGORY 2/..../CATEGORY n/BOOKNAME</strong></p><p>It means that the book BOOKNAME belongs to CATEGORY n, and CATEGORY n belongs to CATEGORY n-1, and CATEGORY n-1 belongs to CATEGORY n-2...... Each book belongs to some categories. Let&#39;s call CATEGORY1 &nbsp;&quot;first class category&quot;, and CATEGORY 2 &quot;second class category&quot;, ...ect. This is an example:</p><p><strong>MATH/GRAPH THEORY<br />ART/HISTORY/JAPANESE HISTORY/JAPANESE ACIENT HISTORY<br />ART/HISTORY/CHINESE HISTORY/THREE KINDOM/RESEARCHES ON LIUBEI<br />ART/HISTORY/CHINESE HISTORY/CHINESE MORDEN HISTORY<br />ART/HISTORY/CHINESE HISTORY/THREE KINDOM/RESEARCHES ON CAOCAO</strong></p><p>Han Meimei needs to make a new list on which the relationship between books and the categories is shown by indents. The rules are:</p><p>1) The n-th class category has an indent of &nbsp;4×(n-1) spaces before it.<br />2) The book directly belongs to the n-th class category has an indent of &nbsp;4×n spaces before it.<br />3) The categories and books which directly belong to a category X should be list below X in dictionary order. But all categories go before all books. <br />4) All first class categories are also list by dictionary order.</p><p>For example, the book list above should be changed into the new list shown below:</p><pre>ART
+    HISTORY
+        CHINESE HISTORY
+            THREE KINDOM
+                RESEARCHES ON CAOCAO
+                RESEARCHES ON LIUBEI
+            CHINESE MORDEN HISTORY
+        JAPANESE HISTORY
+            JAPANESE ACIENT HISTORY
+MATH
+    GRAPH THEORY
+</pre><p>Please help Han Meimei to write a program to deal with her job.<br /></p><h3>输入</h3><p>There are no more than 10 test cases.<br />Each case is a list of no more than 30 books, ending by a line of &quot;0&quot;. <br />The description of a book contains only uppercase letters, digits, &#39;/&#39; and spaces, and it&#39;s no more than 100 characters.<br />Please note that, a same book may be listed more than once in the original list, but in the new list, each book only can be listed once. If two books have the same name but belong to different categories, they are different books.<br /></p><h3>输出</h3><p>For each test case, print &quot;Case n:&quot; first(n starts from 1), then print the new list as required.</p></div>
+		<dt>样例输入</dt>
+		<dd>
+			<pre>B/A
+B/A
+B/B
+0
+A1/B1/B32/B7
+A1/B/B2/B4/C5
+A1/B1/B2/B6/C5
+A1/B1/B2/B5
+A1/B1/B2/B1
+A1/B3/B2
+A3/B1
+A0/A1
+0</pre>
+		</dd>
+		<dt>样例输出</dt>
+		<dd>
+			<pre>Case 1:
+B
+    A
+    B
+Case 2:
+A0
+    A1
+A1
+    B
+        B2
+            B4
+                C5
+    B1
+        B2
+            B6
+                C5
+            B1
+            B5
+        B32
+            B7
+    B3
+        B2
+A3
+    B1</pre>
+		</dd>
+	</dl>
+</div>		</div>
+	</div>
+	<!--
+	@form_action
+	@form_onsubmit
+	@contest_id
+	@problem_id
+-->
+<article class="tl-code-editor">
+	<form id="h-form-code-editor" class="form-horizontal" action="/api/problem/submit.json" method="post" onsubmit="document.getElementById('source-input').value=window.aceEditor.getSession().getValue();$(this).ajaxsubmit(Callbacks.redirect('url'));return false;">
+		<input class="hide" name="contest-id" value="233" />
+		<input class="hide" name="problem-id" value="1383" />
+		<input id="source-input" name="source" value="" type="hidden" />
+		<header class="tl-code-editor-toolbar clearfix">
+			<div class="btn-group">
+				<a data-keyboard="emacs" class="h-toggle-keyboard btn btn-default emacs">Emacs</a>
+				<a data-keyboard="normal" class="h-toggle-keyboard btn btn-default normal active">Normal</a>
+				<a data-keyboard="vim" class="h-toggle-keyboard btn btn-default vim">Vim</a>
+			</div>
+			<div class="toggle-screen">
+				<a class="h-fullscreen"><span class="icon-fullscreen"></span></a>
+			</div>
+			<select name="language" class="tl-code-editor-lang h-select-lang">
+								<option value="GCC" >GCC</option>
+				<option value="G++" selected>G++</option>
+								<option value="C#" >C#</option>
+								<option value="Java" >Java</option>
+								<option value="Python2" >Python2</option>
+											</select>
+		</header>
+		<div class="tl-code-editor-content">
+			<pre id="code-editor" style="height:500px;position:relative;font-size:16px;line-height:17px"></pre>
+		</div>
+		<footer class="tl-code-editor-footer clearfix">
+						<div class="r">
+								<button type="submit" class="btn btn-success">提交</button>
+			</div>
+		</footer>
+	</form>
+</article>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/ace.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-c_cpp.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-csharp.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-java.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-python.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/theme-chrome.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/keybinding-emacs.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/keybinding-vim.js?1457224552.js"></script>
+
+	</div>
+<!--
+	@form_action
+	@form_onsubmit
+	@contest_id
+	@problem_id
+-->
+<div id="fullscreen-code-editor-wrap" class="tl-fullscreen-wrap hide">
+	<div class="left-bar">
+		<!-- 
+parameter:
+	@time_limit
+	@case_time_limit
+	@memory_limit
+	@description
+	@sample_input
+	@sample_output		
+-->
+<div id="tl-problem-content">
+	<div class="limit">
+		<div>时间限制:<span style="margin-left: 10px;">1000ms</span></div>
+		<div>单点时限:<span style="margin-left: 10px;">1000ms</span></div>
+		<div>内存限制:<span style="margin-left: 10px;">256MB</span></div>		
+	</div>
+	<table></table>
+	<dl class="des">
+		<div><h3>描述</h3><p>The history of Peking University Library is as long as the history of Peking University. It was build in 1898. At the end of year 2015, it had about 11,000 thousand volumes of books, among which 8,000 thousand volumes were paper books and the others were digital ones. Chairman Mao Zedong worked in Peking University Library for a few months as an assistant during 1918 to 1919. He earned 8 Dayang per month there, while the salary of top professors in Peking University is about 280 Dayang per month.</p><p>Now Han Meimei just takes the position which Chairman Mao used to be in Peking University Library. Her first job is to rearrange a list of books. Every entry in the list is in the format shown below:</p><p><strong>CATEGORY 1/CATEGORY 2/..../CATEGORY n/BOOKNAME</strong></p><p>It means that the book BOOKNAME belongs to CATEGORY n, and CATEGORY n belongs to CATEGORY n-1, and CATEGORY n-1 belongs to CATEGORY n-2...... Each book belongs to some categories. Let&#39;s call CATEGORY1 &nbsp;&quot;first class category&quot;, and CATEGORY 2 &quot;second class category&quot;, ...ect. This is an example:</p><p><strong>MATH/GRAPH THEORY<br />ART/HISTORY/JAPANESE HISTORY/JAPANESE ACIENT HISTORY<br />ART/HISTORY/CHINESE HISTORY/THREE KINDOM/RESEARCHES ON LIUBEI<br />ART/HISTORY/CHINESE HISTORY/CHINESE MORDEN HISTORY<br />ART/HISTORY/CHINESE HISTORY/THREE KINDOM/RESEARCHES ON CAOCAO</strong></p><p>Han Meimei needs to make a new list on which the relationship between books and the categories is shown by indents. The rules are:</p><p>1) The n-th class category has an indent of &nbsp;4×(n-1) spaces before it.<br />2) The book directly belongs to the n-th class category has an indent of &nbsp;4×n spaces before it.<br />3) The categories and books which directly belong to a category X should be list below X in dictionary order. But all categories go before all books. <br />4) All first class categories are also list by dictionary order.</p><p>For example, the book list above should be changed into the new list shown below:</p><pre>ART
+    HISTORY
+        CHINESE HISTORY
+            THREE KINDOM
+                RESEARCHES ON CAOCAO
+                RESEARCHES ON LIUBEI
+            CHINESE MORDEN HISTORY
+        JAPANESE HISTORY
+            JAPANESE ACIENT HISTORY
+MATH
+    GRAPH THEORY
+</pre><p>Please help Han Meimei to write a program to deal with her job.<br /></p><h3>输入</h3><p>There are no more than 10 test cases.<br />Each case is a list of no more than 30 books, ending by a line of &quot;0&quot;. <br />The description of a book contains only uppercase letters, digits, &#39;/&#39; and spaces, and it&#39;s no more than 100 characters.<br />Please note that, a same book may be listed more than once in the original list, but in the new list, each book only can be listed once. If two books have the same name but belong to different categories, they are different books.<br /></p><h3>输出</h3><p>For each test case, print &quot;Case n:&quot; first(n starts from 1), then print the new list as required.</p></div>
+		<dt>样例输入</dt>
+		<dd>
+			<pre>B/A
+B/A
+B/B
+0
+A1/B1/B32/B7
+A1/B/B2/B4/C5
+A1/B1/B2/B6/C5
+A1/B1/B2/B5
+A1/B1/B2/B1
+A1/B3/B2
+A3/B1
+A0/A1
+0</pre>
+		</dd>
+		<dt>样例输出</dt>
+		<dd>
+			<pre>Case 1:
+B
+    A
+    B
+Case 2:
+A0
+    A1
+A1
+    B
+        B2
+            B4
+                C5
+    B1
+        B2
+            B6
+                C5
+            B1
+            B5
+        B32
+            B7
+    B3
+        B2
+A3
+    B1</pre>
+		</dd>
+	</dl>
+</div>	</div>
+	<div class="separator"></div>
+	<div class="right-bar">
+		<article class="tl-code-editor">
+			<form id="h-form-full-code-editor" class="form-horizontal" action="/api/problem/submit.json" method="post" onsubmit="document.getElementById('full-source-input').value=window.aceFullEditor.getSession().getValue();$(this).ajaxsubmit(Callbacks.redirect('url'));return false;">
+				<input class="hide" name="contest-id" value="233" />
+				<input class="hide" name="problem-id" value="1383" />
+				<input id="full-source-input" name="source" value="" type="hidden" />
+				<header class="tl-code-editor-toolbar clearfix">
+					<div class="btn-group">
+						<a data-keyboard="emacs" class="h-toggle-keyboard btn btn-default emacs">Emacs</a>
+						<a data-keyboard="normal" class="h-toggle-keyboard btn btn-default normal active">Normal</a>
+						<a data-keyboard="vim" class="h-toggle-keyboard btn btn-default vim">Vim</a>
+					</div>
+					<div class="toggle-screen">
+						<a href="" class="h-resize-screen"><span class="icon-resize-small"></span></a>
+					</div>
+					<select name="language" class="tl-code-editor-lang h-select-lang">
+												<option value="GCC" >GCC</option>
+						<option value="G++" selected>G++</option>
+												<option value="C#" >C#</option>
+												<option value="Java" >Java</option>
+												<option value="Python2" >Python2</option>
+																	</select>
+				</header>
+				<div class="tl-code-editor-content">
+					<pre id="fullscreen-code-editor" style="height:500px;position:relative;font-size:16px;line-height:17px"></pre>
+				</div>
+				<footer class="tl-code-editor-footer clearfix">
+										<div class="r">
+												<button type="submit" class="btn btn-success">提交</button>
+					</div>
+				</footer>
+			</form>
+		</article>
+ 			</div>
+</div>
+	
+<script type="text/javascript" src="http://static.hihocoder.com/js/code-editor.js?1457224552.js"></script><script type="text/javascript">
+	var mode = {
+			'GCC'  :'ace/mode/c_cpp',
+			'G++'  :'ace/mode/c_cpp',
+			'C#'   :'ace/mode/csharp',
+			'Java' :'ace/mode/java',
+			'Python2' :'ace/mode/python',
+			'Python3' :'ace/mode/python'
+	};	
+	var editor = window.aceEditor;
+	var fullEditor = window.aceFullEditor;
+	editor.setTheme('ace/theme/tomorrow_night_eighties');
+		editor.getSession().setMode(mode['G++']);
+	fullEditor.getSession().setMode(mode['G++']);
+		    editor.getSession().setValue("");
+    fullEditor.getSession().setValue("");
+    </script>
+<script type="text/javascript">
+	var sec = 'dontwakemeup';
+	var editor = window.aceEditor;
+	var fullEditor = window.aceFullEditor;
+	editor.on("change", function(e) {
+		if(editor.isFocused()) {
+			//console.log("editor: " + e.data);
+			var deltas = new Array();
+			deltas[0] = e.data;
+			fullEditor.getSession().getDocument().applyDeltas(deltas);
+					}
+	});
+	editor.getSession().on("changeScrollTop", function(e) {
+		if(editor.isFocused()) {
+			fullEditor.getSession().setScrollTop(parseInt(e));
+			//console.log("editor scroll: " + parseInt(e));
+					}
+	});
+	editor.getSession().on("changeScrollLeft", function(e) {
+		if(editor.isFocused()) {
+			fullEditor.getSession().setScrollLeft(parseInt(e));
+			//console.log("editor scroll: " + parseInt(e));
+					}
+	});
+	fullEditor.on("change", function(e) {
+		if(fullEditor.isFocused()) {
+			var deltas = new Array();
+			deltas[0] = e.data;
+			editor.getSession().getDocument().applyDeltas(deltas);
+					}
+	});
+	fullEditor.getSession().on("changeScrollTop", function(e) {
+		if(fullEditor.isFocused()) {
+			editor.getSession().setScrollTop(parseInt(e));
+					}
+	});
+	fullEditor.getSession().on("changeScrollLeft", function(e) {
+		if(fullEditor.isFocused()) {
+			editor.getSession().setScrollLeft(parseInt(e));
+					}
+	});
+</script>
+<script type="text/javascript" src="http://static.hihocoder.com/js/libs/weixin-share.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2232" charset="utf-8"></script>			</div>
+		</div>
+        <a id="gotop" href="#">
+            <span>▲</span>
+        </a>
+		<footer id="tl-footer">
+	<div class="container tl-footer-lg">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-3">
+						<h4>关于我们</h4>
+						<ul>
+							<li><a href="/about-us#website-desc">网站介绍</a></li>
+							<li><a href="/about-us#team-desc">团队介绍</a></li>
+							<li><a href="/about-us#connect-us">联系方式</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>hihoCoder</h4>
+						<ul>
+							<li><a href="/hiho">hiho一下</a></li>
+							<li><a href="/contests">比赛</a></li>
+							<li><a href="/discuss">讨论</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>帮助中心</h4>
+						<ul>
+							<li><a href="/help-center/coder-help">答题帮助</a></li>
+							<li><a href="/help-center/contest-rating">比赛积分系统</a></li>
+													</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>关注我们</h4>
+						<ul>
+							<li><a href="http://weibo.com/u/3473063194" target="_blank" title="hihoCoder新浪微博" class="connect-icon sina-weibo">新浪微博</a></li>
+                        <li><a data-container="body" id="weixin" data-toggle="popover" data-placement="top" data-html="true" data-content="<img style='width:150px;' src='http://static.hihocoder.com/images/weixin.jpg'>" data-trigger="hover" style="  cursor: pointer;">微信公众号</a></li>
+                        <li><a href="http://page.renren.com/601893290" target="_blank" title="hihoCoder人人公共主页">人人公共主页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 side">
+				<h4>联系我们</h4>
+				<address>
+					<p>北京市海淀区中关村购物广场西侧 善缘街1号 立方庭大厦1-307</p>
+					<a href="mailto:webmaster@hihocoder.com">webmaster@hihocoder.com</a>
+				</address>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tl-footer-sm">
+		<p>© 2016 hihoCoder 沪ICP备14022864号</p>
+			</div>
+</footer>
+<script type="text/javascript">
+    $(function () {
+        $("#weixin").popover()
+    })
+</script>	</body>
+</html>

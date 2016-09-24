@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta property="qc:admins" content="25115412737374526375" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>hihoCoder</title>
+		<!--[if lt IE 9]>
+	    	<script type="text/javascript" src="http://static.hihocoder.com/js/libs/html5.js?1457224552.js"></script>
+	    <![endif]-->
+	    <link href="http://static.hihocoder.com/images/hiho.ico" rel="shortcut icon" type="image/x-icon">
+		<link type="text/css" rel="stylesheet" href="http://static.hihocoder.com/styles/home.css?1473226694.css">
+		<script type="text/javascript" src="http://static.hihocoder.com/js/libs/jquery-1.10.2.min.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/api.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/common.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/dropdown.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/button.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/alert.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/libs/tab.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/collapse.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/tooltip.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/modal.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/tag.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/discuss.js?1457224552.js"></script>
+		<script type="text/javascript" src="http://static.hihocoder.com/js/framework/contest.js?1457224552.js"></script>
+        <script type="text/javascript" src="http://static.hihocoder.com/js/framework/popover.js?1457224552.js"></script>
+		<script type="text/javascript">
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?9334676254a219943ea90c19530c3bec";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<nav id="tl-top-navbar" class="navbar navbar-inverse">
+<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse">
+		<div class="container">
+			<a class="navbar-brand" href="/">hihocoder</a>
+			<ul class="nav navbar-nav">
+								<li>
+					<a href="/hiho">hiho一下</a></li>
+				<li>
+					<a href="/contests" class="fire">比赛<span class="icon-fire"></span></a>
+				</li>
+				<li>
+					<a href="/problemset">题库</a></li>
+				<li>
+					<a href="/discuss">讨论</a></li> 
+							</ul>
+			<ul class="nav navbar-nav navbar-right">
+								<!-- <li><a href="/notifications">消息</a></li>  -->	
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">team160342 <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="/user/69625">个人主页</a></li>
+						<li><a href="/settings">账户设置</a></li>
+						<li class="divider"></li>
+						<li><a href="javascript:api.logout();">退出</a></li>
+					</ul>
+				</li>
+							</ul>
+		</div>
+	</div><!-- /.navbar-collapse -->
+	</nav>
+				<header id="tl-site-header" style="background: #000 url(http://static.hihocoder.com/images/bg.jpg) no-repeat center 0;background-size: 100%;">
+	<div class="tl-site-header-wrap">
+		<div class="container clearfix">
+			<div class="tl-site-header-logo">
+				<img class="pic" src="http://static.hihocoder.com/images/hiho.jpg">
+				<span class="logo-bg"></span>
+			</div>
+			<div class="tl-site-header-title">
+				<h3>ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛										<a disabled="disabled" class="btn btn-success">已经报名</a>
+									</h3>
+																				<p class="time">正在进行： <span>3872</span></p>
+							</div>
+			<ul class="tl-site-header-nav">
+				<li><a href="/contest/acmicpc2016beijingonline">首页</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/problems">题目列表</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/submitted">我的提交</a></li>
+				<li><a href="/contest/acmicpc2016beijingonline/rank">排名</a></li>
+												<li><a target="_blank" href="/discuss/tag/acmicpc2016beijing">讨论</a></li>
+							</ul>
+			<div class="tl-site-header-meta clearfix">
+				<p class="registered">报名人数：2000</p>
+								<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style sns-share">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+</div>
+<!-- JiaThis Button END -->
+							</div>
+		</div>
+	</div>
+</header>
+<script type="text/javascript">
+	var time = 3872;
+	var str_day = "天";
+	var str_hour = "小时";
+	var str_minute = "分钟";
+	var str_second = "秒";
+	$(function(){
+		$.showTime();
+	});
+</script>
+<script type="text/javascript">
+	//weixin
+	var imgUrl = 'http://static.hihocoder.com/images/hiho.jpg';
+	var lineLink = 'http://hihocoder.com/contest/acmicpc2016beijingonline';
+	var descContent = "";
+	var shareTitle = '我报名参加了ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛，小伙伴们也一起来挑战吧！';
+
+	//jiathis
+	function setShare(title, url) {
+		//jiathis
+        jiathis_config.title = title;
+        jiathis_config.url = url;
+    }
+	var jiathis_config={
+	 	title: "我报名参加了#ACM-ICPC国际大学生程序设计竞赛北京赛区(2016)网络赛#，小伙伴们也一起来挑战吧！--分享自@hihoCoder,链接地址:",
+		url: "http://hihocoder.com/contest/acmicpc2016beijingonline",
+		summary: ' ',
+		data_track_clickback: true,
+		hideMore: true
+	}
+</script>
+
+			<div id="content" class="container">
+				<div class="contest-problem" id="main">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">题目4 : Pick Your Players</h3>
+		</div>
+		<div class="panel-body">
+			<!-- 
+parameter:
+	@time_limit
+	@case_time_limit
+	@memory_limit
+	@description
+	@sample_input
+	@sample_output		
+-->
+<div id="tl-problem-content">
+	<div class="limit">
+		<div>时间限制:<span style="margin-left: 10px;">2000ms</span></div>
+		<div>单点时限:<span style="margin-left: 10px;">2000ms</span></div>
+		<div>内存限制:<span style="margin-left: 10px;">256MB</span></div>		
+	</div>
+	<table></table>
+	<dl class="des">
+		<div><h3>描述</h3><p>You are the manager of a small soccer team. After seeing the shameless behavior of your team during the match, you are mad at all of the current players. Therefore, you have made a huge decision: put these players on the substitution bench, and buy the entire starting line-up from other teams.</p><p>You have received a list of available players from your assistant manager. Each player has three properties: Position, Value, and Cost. The Position of a player is one of the four kinds: Goalkeeper, Defender, Midfielder and Forward. The Value shows the ability of the player (the higher, the better), and the Cost is the money you need to spend to buy him.</p><p>You are going to pick some players to buy from the list, in order to form the starting line-up. Several rules should be followed:</p><p>1. The starting line-up consists of exactly eleven players.</p><p>2. There should be exactly one Goalkeeper, at least three but at most five Defenders, at least two but at most five Midfielders, and at least one but at most three Forwards in the starting line-up.</p><p>3. There should be exactly one captain in the starting line-up.The captain must be chosen from the eleven players.</p><p>4. The total value of the starting line-up is the sum of the Values of picked players plus the Value of the captain. In another word, the Value of the captain is counted twice.</p><p>5. The total cost of the starting line-up is the sum of the Costs of picked players, which should not exceed the given cost limitation.</p><p>Now you have to give a plan to your boss before taking the actual actions. In the plan, you should report three numbers which your boss really interests in: V<sub>t</sub>, C<sub>t</sub>, N, where V<sub>t</sub> is the maximum total value you can get; C<sub>t</sub> is the minimum total cost when the total value is V<sub>t</sub>; And N is the number of different ways to pick players when the total value is V<sub>t</sub> and the total cost is C<sub>t</sub>. Since your boss does not care the precise number of N if it is larger than 1,000,000,000, just report N = 1,000,000,000 when that happens.</p><p>Note that if two or more ways that pick the same eleven players and are only different in captain chosen, they should be regarded as the same.<br /></p><h3>输入</h3><p>There are several test cases in the input.</p><p>The first line contains an integer T (1 &lt;= T &lt;= 10) -- the number of test cases.</p><p>For each case:</p><p>The first line contains an integer M (11 &lt;= M &lt;= 500) -- the number of players on the list.</p><p>Then follows M lines, each line contains a string P and two integers V and C (0 &lt;= V &lt;= 1000, 0 &lt;= C &lt;= 1000), separated by a single space, describing the properties of a player. P is the position of the player, which is one of the strings “Goalkeeper”, “Defender”, “Midfielder”, and “Forward”; V is the Value of the player and C is the Cost of the player.</p><p>The last line contains an integer L (0 &lt;= L &lt;= 1000) -- the cost limitation.<br /></p><h3>输出</h3><p>For each test case, output three integers V<sub>t</sub>, C<sub>t</sub> and N on a single line, separated by a single space. We assure that there is at least one possible way to pick your players.</p><p><br /></p><h3>提示</h3><p>In the sample, you should pick all five Defenders, four Midfielders with Value 178, 20, 64 and 109, one Forward with Value 6, and one of two Goalkeepers with Value 57. The Midfielder with Value 178 should be the captain.</p><p><br /></p></div>
+		<dt>样例输入</dt>
+		<dd>
+			<pre>1
+15
+Defender 23 45
+Midfielder 178 85
+Goalkeeper 57 50
+Goalkeeper 57 50
+Defender 0 45
+Forward 6 60
+Midfielder 20 50
+Goalkeeper 0 50
+Midfielder 64 65
+Midfielder 109 70
+Forward 211 100
+Defender 0 40
+Defender 29 45
+Midfielder 57 60
+Defender 52 45
+600</pre>
+		</dd>
+		<dt>样例输出</dt>
+		<dd>
+			<pre>716 600 2</pre>
+		</dd>
+	</dl>
+</div>		</div>
+	</div>
+	<!--
+	@form_action
+	@form_onsubmit
+	@contest_id
+	@problem_id
+-->
+<article class="tl-code-editor">
+	<form id="h-form-code-editor" class="form-horizontal" action="/api/problem/submit.json" method="post" onsubmit="document.getElementById('source-input').value=window.aceEditor.getSession().getValue();$(this).ajaxsubmit(Callbacks.redirect('url'));return false;">
+		<input class="hide" name="contest-id" value="233" />
+		<input class="hide" name="problem-id" value="1386" />
+		<input id="source-input" name="source" value="" type="hidden" />
+		<header class="tl-code-editor-toolbar clearfix">
+			<div class="btn-group">
+				<a data-keyboard="emacs" class="h-toggle-keyboard btn btn-default emacs">Emacs</a>
+				<a data-keyboard="normal" class="h-toggle-keyboard btn btn-default normal active">Normal</a>
+				<a data-keyboard="vim" class="h-toggle-keyboard btn btn-default vim">Vim</a>
+			</div>
+			<div class="toggle-screen">
+				<a class="h-fullscreen"><span class="icon-fullscreen"></span></a>
+			</div>
+			<select name="language" class="tl-code-editor-lang h-select-lang">
+								<option value="GCC" >GCC</option>
+				<option value="G++" selected>G++</option>
+								<option value="C#" >C#</option>
+								<option value="Java" >Java</option>
+								<option value="Python2" >Python2</option>
+											</select>
+		</header>
+		<div class="tl-code-editor-content">
+			<pre id="code-editor" style="height:500px;position:relative;font-size:16px;line-height:17px"></pre>
+		</div>
+		<footer class="tl-code-editor-footer clearfix">
+						<div class="r">
+								<button type="submit" class="btn btn-success">提交</button>
+			</div>
+		</footer>
+	</form>
+</article>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/ace.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-c_cpp.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-csharp.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-java.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/mode-python.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/theme-chrome.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/keybinding-emacs.js?1457224552.js"></script>
+<script type="text/javascript" src="http://static.hihocoder.com/ace/keybinding-vim.js?1457224552.js"></script>
+
+	</div>
+<!--
+	@form_action
+	@form_onsubmit
+	@contest_id
+	@problem_id
+-->
+<div id="fullscreen-code-editor-wrap" class="tl-fullscreen-wrap hide">
+	<div class="left-bar">
+		<!-- 
+parameter:
+	@time_limit
+	@case_time_limit
+	@memory_limit
+	@description
+	@sample_input
+	@sample_output		
+-->
+<div id="tl-problem-content">
+	<div class="limit">
+		<div>时间限制:<span style="margin-left: 10px;">2000ms</span></div>
+		<div>单点时限:<span style="margin-left: 10px;">2000ms</span></div>
+		<div>内存限制:<span style="margin-left: 10px;">256MB</span></div>		
+	</div>
+	<table></table>
+	<dl class="des">
+		<div><h3>描述</h3><p>You are the manager of a small soccer team. After seeing the shameless behavior of your team during the match, you are mad at all of the current players. Therefore, you have made a huge decision: put these players on the substitution bench, and buy the entire starting line-up from other teams.</p><p>You have received a list of available players from your assistant manager. Each player has three properties: Position, Value, and Cost. The Position of a player is one of the four kinds: Goalkeeper, Defender, Midfielder and Forward. The Value shows the ability of the player (the higher, the better), and the Cost is the money you need to spend to buy him.</p><p>You are going to pick some players to buy from the list, in order to form the starting line-up. Several rules should be followed:</p><p>1. The starting line-up consists of exactly eleven players.</p><p>2. There should be exactly one Goalkeeper, at least three but at most five Defenders, at least two but at most five Midfielders, and at least one but at most three Forwards in the starting line-up.</p><p>3. There should be exactly one captain in the starting line-up.The captain must be chosen from the eleven players.</p><p>4. The total value of the starting line-up is the sum of the Values of picked players plus the Value of the captain. In another word, the Value of the captain is counted twice.</p><p>5. The total cost of the starting line-up is the sum of the Costs of picked players, which should not exceed the given cost limitation.</p><p>Now you have to give a plan to your boss before taking the actual actions. In the plan, you should report three numbers which your boss really interests in: V<sub>t</sub>, C<sub>t</sub>, N, where V<sub>t</sub> is the maximum total value you can get; C<sub>t</sub> is the minimum total cost when the total value is V<sub>t</sub>; And N is the number of different ways to pick players when the total value is V<sub>t</sub> and the total cost is C<sub>t</sub>. Since your boss does not care the precise number of N if it is larger than 1,000,000,000, just report N = 1,000,000,000 when that happens.</p><p>Note that if two or more ways that pick the same eleven players and are only different in captain chosen, they should be regarded as the same.<br /></p><h3>输入</h3><p>There are several test cases in the input.</p><p>The first line contains an integer T (1 &lt;= T &lt;= 10) -- the number of test cases.</p><p>For each case:</p><p>The first line contains an integer M (11 &lt;= M &lt;= 500) -- the number of players on the list.</p><p>Then follows M lines, each line contains a string P and two integers V and C (0 &lt;= V &lt;= 1000, 0 &lt;= C &lt;= 1000), separated by a single space, describing the properties of a player. P is the position of the player, which is one of the strings “Goalkeeper”, “Defender”, “Midfielder”, and “Forward”; V is the Value of the player and C is the Cost of the player.</p><p>The last line contains an integer L (0 &lt;= L &lt;= 1000) -- the cost limitation.<br /></p><h3>输出</h3><p>For each test case, output three integers V<sub>t</sub>, C<sub>t</sub> and N on a single line, separated by a single space. We assure that there is at least one possible way to pick your players.</p><p><br /></p><h3>提示</h3><p>In the sample, you should pick all five Defenders, four Midfielders with Value 178, 20, 64 and 109, one Forward with Value 6, and one of two Goalkeepers with Value 57. The Midfielder with Value 178 should be the captain.</p><p><br /></p></div>
+		<dt>样例输入</dt>
+		<dd>
+			<pre>1
+15
+Defender 23 45
+Midfielder 178 85
+Goalkeeper 57 50
+Goalkeeper 57 50
+Defender 0 45
+Forward 6 60
+Midfielder 20 50
+Goalkeeper 0 50
+Midfielder 64 65
+Midfielder 109 70
+Forward 211 100
+Defender 0 40
+Defender 29 45
+Midfielder 57 60
+Defender 52 45
+600</pre>
+		</dd>
+		<dt>样例输出</dt>
+		<dd>
+			<pre>716 600 2</pre>
+		</dd>
+	</dl>
+</div>	</div>
+	<div class="separator"></div>
+	<div class="right-bar">
+		<article class="tl-code-editor">
+			<form id="h-form-full-code-editor" class="form-horizontal" action="/api/problem/submit.json" method="post" onsubmit="document.getElementById('full-source-input').value=window.aceFullEditor.getSession().getValue();$(this).ajaxsubmit(Callbacks.redirect('url'));return false;">
+				<input class="hide" name="contest-id" value="233" />
+				<input class="hide" name="problem-id" value="1386" />
+				<input id="full-source-input" name="source" value="" type="hidden" />
+				<header class="tl-code-editor-toolbar clearfix">
+					<div class="btn-group">
+						<a data-keyboard="emacs" class="h-toggle-keyboard btn btn-default emacs">Emacs</a>
+						<a data-keyboard="normal" class="h-toggle-keyboard btn btn-default normal active">Normal</a>
+						<a data-keyboard="vim" class="h-toggle-keyboard btn btn-default vim">Vim</a>
+					</div>
+					<div class="toggle-screen">
+						<a href="" class="h-resize-screen"><span class="icon-resize-small"></span></a>
+					</div>
+					<select name="language" class="tl-code-editor-lang h-select-lang">
+												<option value="GCC" >GCC</option>
+						<option value="G++" selected>G++</option>
+												<option value="C#" >C#</option>
+												<option value="Java" >Java</option>
+												<option value="Python2" >Python2</option>
+																	</select>
+				</header>
+				<div class="tl-code-editor-content">
+					<pre id="fullscreen-code-editor" style="height:500px;position:relative;font-size:16px;line-height:17px"></pre>
+				</div>
+				<footer class="tl-code-editor-footer clearfix">
+										<div class="r">
+												<button type="submit" class="btn btn-success">提交</button>
+					</div>
+				</footer>
+			</form>
+		</article>
+ 			</div>
+</div>
+	
+<script type="text/javascript" src="http://static.hihocoder.com/js/code-editor.js?1457224552.js"></script><script type="text/javascript">
+	var mode = {
+			'GCC'  :'ace/mode/c_cpp',
+			'G++'  :'ace/mode/c_cpp',
+			'C#'   :'ace/mode/csharp',
+			'Java' :'ace/mode/java',
+			'Python2' :'ace/mode/python',
+			'Python3' :'ace/mode/python'
+	};	
+	var editor = window.aceEditor;
+	var fullEditor = window.aceFullEditor;
+	editor.setTheme('ace/theme/tomorrow_night_eighties');
+		editor.getSession().setMode(mode['G++']);
+	fullEditor.getSession().setMode(mode['G++']);
+		    editor.getSession().setValue("");
+    fullEditor.getSession().setValue("");
+    </script>
+<script type="text/javascript">
+	var sec = 'dontwakemeup';
+	var editor = window.aceEditor;
+	var fullEditor = window.aceFullEditor;
+	editor.on("change", function(e) {
+		if(editor.isFocused()) {
+			//console.log("editor: " + e.data);
+			var deltas = new Array();
+			deltas[0] = e.data;
+			fullEditor.getSession().getDocument().applyDeltas(deltas);
+					}
+	});
+	editor.getSession().on("changeScrollTop", function(e) {
+		if(editor.isFocused()) {
+			fullEditor.getSession().setScrollTop(parseInt(e));
+			//console.log("editor scroll: " + parseInt(e));
+					}
+	});
+	editor.getSession().on("changeScrollLeft", function(e) {
+		if(editor.isFocused()) {
+			fullEditor.getSession().setScrollLeft(parseInt(e));
+			//console.log("editor scroll: " + parseInt(e));
+					}
+	});
+	fullEditor.on("change", function(e) {
+		if(fullEditor.isFocused()) {
+			var deltas = new Array();
+			deltas[0] = e.data;
+			editor.getSession().getDocument().applyDeltas(deltas);
+					}
+	});
+	fullEditor.getSession().on("changeScrollTop", function(e) {
+		if(fullEditor.isFocused()) {
+			editor.getSession().setScrollTop(parseInt(e));
+					}
+	});
+	fullEditor.getSession().on("changeScrollLeft", function(e) {
+		if(fullEditor.isFocused()) {
+			editor.getSession().setScrollLeft(parseInt(e));
+					}
+	});
+</script>
+<script type="text/javascript" src="http://static.hihocoder.com/js/libs/weixin-share.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2232" charset="utf-8"></script>			</div>
+		</div>
+        <a id="gotop" href="#">
+            <span>▲</span>
+        </a>
+		<footer id="tl-footer">
+	<div class="container tl-footer-lg">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="row">
+					<div class="col-xs-3">
+						<h4>关于我们</h4>
+						<ul>
+							<li><a href="/about-us#website-desc">网站介绍</a></li>
+							<li><a href="/about-us#team-desc">团队介绍</a></li>
+							<li><a href="/about-us#connect-us">联系方式</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>hihoCoder</h4>
+						<ul>
+							<li><a href="/hiho">hiho一下</a></li>
+							<li><a href="/contests">比赛</a></li>
+							<li><a href="/discuss">讨论</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>帮助中心</h4>
+						<ul>
+							<li><a href="/help-center/coder-help">答题帮助</a></li>
+							<li><a href="/help-center/contest-rating">比赛积分系统</a></li>
+													</ul>
+					</div>
+					<div class="col-xs-3">
+						<h4>关注我们</h4>
+						<ul>
+							<li><a href="http://weibo.com/u/3473063194" target="_blank" title="hihoCoder新浪微博" class="connect-icon sina-weibo">新浪微博</a></li>
+                        <li><a data-container="body" id="weixin" data-toggle="popover" data-placement="top" data-html="true" data-content="<img style='width:150px;' src='http://static.hihocoder.com/images/weixin.jpg'>" data-trigger="hover" style="  cursor: pointer;">微信公众号</a></li>
+                        <li><a href="http://page.renren.com/601893290" target="_blank" title="hihoCoder人人公共主页">人人公共主页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 side">
+				<h4>联系我们</h4>
+				<address>
+					<p>北京市海淀区中关村购物广场西侧 善缘街1号 立方庭大厦1-307</p>
+					<a href="mailto:webmaster@hihocoder.com">webmaster@hihocoder.com</a>
+				</address>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tl-footer-sm">
+		<p>© 2016 hihoCoder 沪ICP备14022864号</p>
+			</div>
+</footer>
+<script type="text/javascript">
+    $(function () {
+        $("#weixin").popover()
+    })
+</script>	</body>
+</html>
