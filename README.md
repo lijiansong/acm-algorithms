@@ -2,6 +2,8 @@ ACM Algorithms
 ============================
 > This archive is about the acm algorithm, which exists frequently in ACM Competitions. It also can be treated as summary of these algorithms. Some examples refer to the book 《Challenge Competition of Programing》.
 
+> 无意中发现了[HelloGCC](http://www.hellogcc.org/), 其实线下的时候开发几个[开源工具](https://github.com/hellogcc)也是不错的...
+
 ## Content
 
 * [Chapter 2](#chapter-2)
@@ -1046,7 +1048,7 @@ int main()
 #### 计算几何
 
 
-> 无意中发现了[HelloGCC](http://www.hellogcc.org/),其实线下的时候开发几个[开源工具](https://github.com/hellogcc)也是不错的...
+
 
 ## License
 > [The MIT License (MIT)](http://opensource.org/licenses/MIT)
