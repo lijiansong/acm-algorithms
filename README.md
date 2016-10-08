@@ -1046,6 +1046,7 @@ int main()
 #### 计算几何
 
 
+> 无意中发现了[HelloGCC](http://www.hellogcc.org/),其实线下的时候开发几个[开源工具](https://github.com/hellogcc)也是不错的...
 
 ## License
 > [The MIT License (MIT)](http://opensource.org/licenses/MIT)
