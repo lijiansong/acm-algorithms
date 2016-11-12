@@ -1047,7 +1047,7 @@ int main()
 
 #### 计算几何
 
-
+- [2016 ACM/ICPC Beijing](http://hihocoder.com/contest/icpcbeijing2016)
 
 
 ## License
