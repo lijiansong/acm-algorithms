@@ -4,6 +4,9 @@ ACM Algorithms
 
 > 无意中发现了[HelloGCC](http://www.hellogcc.org/), 其实线下的时候开发几个[开源工具](https://github.com/hellogcc)也是不错的...
 
+> 找时间自己写一个`完整的 健壮的`编译器还是很有必要的，Todo: based on LLVM & Clang, or just in Cpp/C
+
+
 ## Content
 
 * [Chapter 2](#chapter-2)
