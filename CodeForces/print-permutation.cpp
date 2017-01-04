@@ -10,7 +10,7 @@ void print_permutation(int n,int* a,int cur)
 		for(i=0;i<n;++i) printf("%d ",a[i]);
 		printf("\n");
 	}
-	//尝试在a[cur]填各种整数i 
+	//尝试在a[cur]填各种整数i
 	else
 	{
 		for(i=1;i<=n;++i)
@@ -35,7 +35,10 @@ int main()
 	{
 		memset(a,0,sizeof(a));
 		for(int i=0;i<n;++i)
-			scanf("%d",&a[i]);
+		{
+			//scanf("%d",&a[i]);
+			a[i]=i+1;
+		}
 		print_permutation(n,a,0);
 	}
 	return 0;
