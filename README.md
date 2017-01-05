@@ -8,6 +8,8 @@ ACM Algorithms
 
 [ACM Software System Award full lists...](http://awards.acm.org/software_system/year.cfm?spm=5176.100239.blogcont59983.5.8KVraM&file=year.cfm)
 
+[reStructuredText标记语言](http://sphinx-doc-zh.readthedocs.io/en/latest/rest.html)相对Markdown来说，使用Sphinx能够自动生成目录和索引文件，方便查询和检索...
+
 
 ## Content
 
