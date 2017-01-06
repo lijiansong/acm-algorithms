@@ -40,6 +40,7 @@ void print_subset(int n,int s)
 	print_subset(n,a,cur+1);*/
 	for(int i=0;i<n;++i)
 	{
+		//here s is set (1<<i) is the 2^i -th set , & means meet operation
 		if(s&(1<<i)) printf("%d ",i);
 	}
 	printf("\n");
@@ -53,6 +54,7 @@ int main()
 		//for(int i=1;i<=n;++i) a[i-1]=i;
 		//print_subset(n,a,0);
 		//delete a;
+		
 		//enum each subset which is encoded by 0,1,2,...,2^n-1
 		for(int i=0;i<(1<<n);++i) print_subset(n,i);
 	}
