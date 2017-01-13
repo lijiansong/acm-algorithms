@@ -44,7 +44,8 @@ ACM Algorithms
   * [数学问题](#数学问题)
   * [网络流](#网络流)
     * [最小割](#zoj2587最小割的唯一性判定)
-  * [计算几何](#计算几何)
+    * [2016 algorithm final examination]()
+  * [计算几何](#计算几何)
   
 
 ## Summary
@@ -1247,6 +1248,82 @@ int main() {
     }
     return 0;        
 }
+```
+
+##### Final Examination
+题目大意：`m*n`的格子中放了一些物体，用枪打这些东西，一次可以打掉一行或者一列，求最少需要多少发子弹干掉所有的物体。题目难在如何建模，如何表示每次消掉一行，或者一列，当时有点急，直接画了个类似二分匹配的模型，即`m*n的矩阵，m行n列，每行对应一个节点，每列对应一个节点，如果某一行某一列有一个节点，就在某行某列对应的节点之间加一个边，s向所有的行节点引一条边，列节点向t引一条边，所有边的容量限制为1，跑一遍最大流算法，最大流值即需要几发子弹`
+
+```
+#include<cstdio>
+#include<vector>
+#include<cstring>
+using namespace std;
+const int maxv=100;//max node num
+const int maxk=1000;//max object num
+
+int n,m,k;//grid size:n*m, n rows and m cloumns, k objects
+int x[maxk],y[maxk];//position of objects
+
+int v;//node num
+vector<int> g[maxv];//adjacency table of graph
+int match[maxv];
+bool visited[maxv];
+void add_edge(int u,int v)
+{
+	g[u].push_back(v);
+	g[v].push_back(u);
+}
+//dfs find the augumenting path
+bool dfs(int v)
+{
+	visited[v]=true;
+	for(int i=0;i<g[v].size();++i)
+	{
+		int u=g[v][i],w=match[u];
+		if(w<0 || !visited[w] && dfs(w))
+		{
+			match[v]=u;
+			match[u]=v;
+			return true;
+		}
+	}
+	return false;
+}
+int bi_match()
+{
+	int ans=0;
+	memset(match,-1,sizeof(match));
+	for(int i=0;i<v;++i)
+	{
+		if(match[i]<0)
+		{
+			memset(visited,0,sizeof(visited));
+			if(dfs(i)) ++ans;
+		}
+	}
+	return ans;
+}
+
+void solve()
+{
+	v=n+n;
+	for(int i=0;i<k;++i)
+	{
+		add_edge(x[i]-1,n+y[i]-1);
+	}
+	printf("%d\n",bi_match());
+}
+int main()
+{
+	freopen("in.txt","r",stdin);
+	while(scanf("%d%d",&n,&m)!=EOF)
+	{
+		scanf("%d",&k);
+		for(int i=0;i<k;++i) scanf("%d%d",&x[i],&y[i]);
+		solve();
+	}
+	return 0;
+} 
 ```
 
 #### 计算几何
