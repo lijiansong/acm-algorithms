@@ -45,7 +45,7 @@ ACM Algorithms
   * [网络流](#网络流)
     * [最小割](#zoj2587最小割的唯一性判定)
     * [final examination](#final-examination)
-  * [计算几何](#计算几何)
+  * [计算几何](#计算几何)
   
 
 ## Summary
@@ -1306,7 +1306,7 @@ int bi_match()
 
 void solve()
 {
-	v=n+n;
+	v=n+m;
 	for(int i=0;i<k;++i)
 	{
 		add_edge(x[i]-1,n+y[i]-1);
