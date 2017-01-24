@@ -45,6 +45,7 @@ ACM Algorithms
   * [网络流](#网络流)
     * [最小割](#zoj2587最小割的唯一性判定)
     * [final examination](#final-examination)
+  * [Skills](#skills)
   * [计算几何](#计算几何)
   
 
@@ -1325,6 +1326,9 @@ int main()
 	return 0;
 } 
 ```
+
+#### Skills
+
 
 #### 计算几何
 
