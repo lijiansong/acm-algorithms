@@ -46,10 +46,10 @@ ACM Algorithms
     * [最小割](#zoj2587最小割的唯一性判定)
     * [final examination](#final-examination)
   * [Skills](#skills)
-    * [poj3061尺取法](#poj3061尺取)
+    * [poj3061尺取法](#poj3061尺取) 
     * [poj3320尺取法](#poj3320尺取法)
-    * [poj3276开关问题](#poj3276开关问题)
-  * [计算几何](#计算几何)
+    * [poj3276开关问题](#poj3276开关问题)
+  * [计算几何](#计算几何)
   
 
 ## Summary
