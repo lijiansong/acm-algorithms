@@ -46,7 +46,10 @@ ACM Algorithms
     * [最小割](#zoj2587最小割的唯一性判定)
     * [final examination](#final-examination)
   * [Skills](#skills)
-  * [计算几何](#计算几何)
+    * [poj3061尺取法](#poj3061尺取)
+    * [poj3320尺取法](#poj3320尺取法)
+    * [poj3276开关问题](#poj3276开关问题)
+  * [计算几何](#计算几何)
   
 
 ## Summary
@@ -1328,6 +1331,84 @@ int main()
 ```
 
 #### Skills
+
+##### poj3061尺取法
+problem：给定长度为n的序列整数a0,a1,a2...an-1以及整数S。求出总和不小于S的连续子序列的长度的最小值.不存在则输出0.
+反复推进区间的开头和末尾，来求取满足条件的最小区间的方法称之为`尺取法`。
+```
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+const int maxn=0x7ffffff;
+int n,S,a[maxn];
+void solve()
+{
+	int res=n+1;
+	int s=0,t=0,sum=0;
+	for(;;)
+	{
+		while(t<n&&sum<S) sum+=a[t++];
+		if(sum<S) break;
+		res=min(res,t-s);
+		sum-=a[s++];
+	}
+	if(res>n) res=0;
+	printf("%d\n",res);
+}
+int main()
+{
+	freopen("in.txt","r",stdin);
+	while(scanf("%d%d",&n,&S)!=EOF)
+	{
+		for(int i=0;i<n;++i) scanf("%d",&a[i]);
+		solve();
+	}
+	return 0;
+} 
+```
+##### poj3320尺取法
+problem：一本书有P页，第i页有一个知识点ai，同一个知识点可能出现多次，通过阅读连续的一些页把所有的知识点都覆盖到，求需要阅读的最小页数。
+```
+#include<cstdio>
+#include<set>
+#include<map>
+#include<algorithm>
+using namespace std;
+const int maxp=0x7ffff;
+int P,a[maxp];
+void solve()
+{
+	set<int> all;
+	for(int i=0;i<P;++i) all.insert(a[i]);
+	int n=all.size();
+	
+	int s=0,t=0,num=0;
+	map<int,int> count;//知识点-出现次数 
+	int res=P;
+	for(;;)
+	{
+		while(t<P&&num<n)
+		{
+			if(count[a[t++]]++ ==0) ++num;
+		}
+		if(num<n) break;
+		res=min(res,t-s);
+		if(--count[a[s++]]==0) --num; 
+	}
+	printf("%d\n",res);
+}
+int main()
+{
+	freopen("in.txt","r",stdin);
+	while(scanf("%d",&P)!=EOF)
+	{
+		for(int i=0;i<P;++i) scanf("%d",&a[i]);
+		solve();
+	}
+	return 0;
+} 
+```
+##### poj3276开关问题
 
 
 #### 计算几何
