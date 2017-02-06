@@ -120,7 +120,8 @@ int main()
 			G[i].clear();
 
 		int x, y;
-		while(true){
+		while(true)
+		{
 			scanf("%d %d", &x, &y);
 			G[x].push_back(y);
 			G[y].push_back(x);
