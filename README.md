@@ -10,6 +10,7 @@ ACM Algorithms
 
 [reStructuredText标记语言](http://sphinx-doc-zh.readthedocs.io/en/latest/rest.html)相对Markdown来说，使用Sphinx能够自动生成目录和索引文件，方便查询和检索...
 
+For ICPC, Remember to threshold in solving and see editorial. `Max 2 hours per a problem...`
 
 ## Content
 
