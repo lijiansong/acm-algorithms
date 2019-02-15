@@ -1,0 +1,3 @@
+[submodule "icpc"]
+	path = icpc
+	url = https://github.com/matthewsamuel95/ACM-ICPC-Algorithms
